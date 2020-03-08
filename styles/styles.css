@@ -1,0 +1,259 @@
+@-webkit-keyframes fadeInTop {
+  from {
+    opacity: 0;
+    bottom: 100px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    bottom: 100px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    right: 100px;
+  }
+  to {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    right: 100px;
+  }
+  to {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    left: 100px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    left: 100px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+h1 {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: url(../images/background.svg) no-repeat right top;
+  background-size: 50%;
+  margin: 4% 12%;
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  overflow: hidden;
+}
+
+body .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15vh;
+}
+
+body .header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 40%;
+  font-weight: 700;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 1px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  position: relative;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-name: fadeInTop;
+          animation-name: fadeInTop;
+}
+
+body .header .navbar .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #a0a1ac;
+  border-radius: 100%;
+}
+
+body .header .navbar .login {
+  color: #a0a1ac;
+}
+
+body .header .navbar .item:hover,
+body .header .navbar .login:hover {
+  text-decoration: underline;
+}
+
+body .header .hamburger {
+  display: none;
+}
+
+body .front {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .front .text-section {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  position: relative;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+}
+
+body .front .text-section .text {
+  color: #a0a1ac;
+  letter-spacing: 4px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+body .front .text-section .first-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .front .text-section .first-container .new {
+  padding: 5px 10px;
+  background-color: #242942;
+  border-radius: 50px;
+  color: white;
+  font-weight: 700;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 1px;
+  margin-right: 20px;
+}
+
+body .front .text-section .second-container h1 {
+  font-size: 4.5rem;
+  margin: 20px 0;
+  line-height: 100%;
+  color: #242942;
+}
+
+body .front .text-section .third-container p {
+  color: #5b5f71;
+  width: 50%;
+}
+
+body .front .text-section .forth-container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .front .text-section .forth-container button {
+  border: none;
+  background-color: #ff5c5c;
+  color: white;
+  border-radius: 5px;
+  padding: 15px 40px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+body .front .text-section .forth-container button:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+body .front .illustration-section {
+  width: 50%;
+  height: 50%;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  position: relative;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
+}
+
+body .front .illustration-section img {
+  position: relative;
+  width: 60vw;
+  left: 10%;
+}
+/*# sourceMappingURL=styles.css.map */
